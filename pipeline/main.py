@@ -5,7 +5,7 @@ from src.process_batch import process_batch
 async def main():
     df = pd.read_csv(INPUT_FILE)
     # UNCOMMENT LINE BELOW TO TEST WITH FEWER ITEMS
-    product_ids = df["id"].head(100).tolist()
+    product_ids = df["id"].tolist()
     # product_ids = df["id"].tolist()
 
     batches = [
